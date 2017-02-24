@@ -1,0 +1,20 @@
+{{!< default}}
+<div class="row">
+		{{#post}}
+
+			<article id="{{id}}" class="{{post_class}}">
+				<div align="center" class="post-text-section">
+					<p class="post-meta-text">
+						<time class="post-stamp" datetime="{{date format="YYYY-MM-DD"}}">{{date published_at format='Do MMMM YYYY'}}</time> /
+						{{#author}}<span class="post-author"><a href="{{url}}">{{name}}</a></span>{{/author}}
+					</p>
+					<h2 class="post-title"><a href="{{url}}" title="{{title}}">{{title}}</a></h2>
+					{{#if image}}
+						<img class="main-images" src="{{image}}" />
+					{{/if}}
+					<h4 class="post-content">{{content}}</h4>
+				</div>
+			</article>
+
+		{{/post}}
+</div>

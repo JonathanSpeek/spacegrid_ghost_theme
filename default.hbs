@@ -1,0 +1,39 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+
+    {{!-- title --}}
+    <title>{{meta_title}}</title>
+    <link rel="favicon" href="{{asset '/favicon.ico'}}">{{!-- meta --}}
+    <meta charset="utf-8">
+    <meta name="description" content="{{meta_description}}">{{!-- styles --}}
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{asset '/styles/spacegrid.css'}}">
+    <link rel="stylesheet" type="text/css" media="screen" href="{{asset '/styles/main.css'}}">{{!-- scripts --}}
+    <script type="text/javascript" src="{{asset '/scripts/jquery.js'}}"></script>
+    <script type="text/javascript" src="{{asset '/scripts/main.js'}}"></script>
+
+    {{!-- ghost head --}}
+    {{ghost_head}}
+
+</head>
+
+<body class="{{body_class}}">
+    {{navigation}}
+
+    {{!-- content --}}
+    <main id="content">
+        {{{body}}}
+    </main>
+
+    {{!-- footer --}}
+    <footer id="footer" class="small-font">
+    </footer>
+
+    {{!-- ghost foot --}}
+    {{ghost_foot}}
+</body>
+
+</html>
