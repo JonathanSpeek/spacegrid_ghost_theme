@@ -1,24 +1,21 @@
 {{!< default}}
 
 <div class="navbar">
-  <div id="menu-button" onclick="menuBars(this)">
-    <div class="bar1"></div>
-    <div class="bar2"></div>
-    <div class="bar3"></div>
-  </div>
-  <p id="menu-text">Menu</p>
-  <div id="menu-items">
-    {{#foreach navigation}}
-      <a href="{{url absolute="true"}}" class="menu-item">{{label}}</a>
-    {{/foreach}}
-  </div>
+    <img src="{{@blog.logo}}" class="logo"/>
+    <p class="logo-text"><a href="{{@blog.url}}"><span id="bold"></span><span id="not-bold"></span></a></p>
+    <ul>
+        <li><a href="{{twitter_url}}" class="social"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="{{facebook_url}}" class="social"><i class="fa fa-facebook"></i></a></li>
+    </ul>
 </div>
+
 <script>
-  function menuBars(x) {
-    x.classList.toggle("change");
-    var el = document.getElementById('menu-items');
-    el.style.display = (el.style.display === 'block' ? 'none' : 'block' );
-    var menuText = document.getElementById('menu-text');
-    menuText.style.display = (menuText.style.display != 'none' ? 'none' : '' );
-  }
+    var title = "{{@blog.title}}";
+    var words = title.split(" ");
+    if (words.length == 2) {
+        document.getElementById('bold').innerHTML = words[0];
+        document.getElementById('not-bold').innerHTML = words[1];
+    } else {
+        document.getElementById('bold').innerHTML = "{{@blog.title}}";
+    }
 </script>

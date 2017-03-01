@@ -1,36 +1,28 @@
 {{!< default}}
 
-<header>
-  <div class="row" id="main">
+<div class="row" id="main">
     <div align="center" class="space-1">
-      <h1 class="page-title">{{@blog.title}}</h1>
-
-      <p class="page-description">{{@blog.description}}</p>
-    </div>
-  </div>
-</header>
-
-<div class="row">
-  <div class="space-8"></div>
-  <div class="space-75" align="center">
-    {{#foreach posts}}
-      <article id="{{id}}" class="{{post_class}}">
-        {{#if image}}
-          <a href="{{url}}"><img class="main-images" src="{{image}}"/></a>
-        {{/if}}
-        <div align="center" class="post-text-section">
-          <p class="post-meta-text">
-            <time class="post-stamp" datetime="{{date format="YYYY-MM-DD"}}">{{date published_at
-                                                                                    format='Do MMMM YYYY'}}</time>
-            / {{#author}}<span class="post-author"><a href="{{url}}">{{name}}</a></span>{{/author}}
-          </p>
-          <h2 class="post-title"><a href="{{url}}" title="{{title}}">{{title}}</a></h2>
-          <h4 class="post-description">{{excerpt characters='140'}} <a href="{{url}}" </a>[...]</h4>
+        <img src="{{@blog.logo}}"/>
+        <h1 class="blog-main-title">{{@blog.title}}</h1>
+        <h3 class="blog-description">{ {{@blog.description}} }</h3>
+        <div class="blog-body">
+            {{#foreach posts}}
+                <article id="{{id}}" class="{{post_class}}">
+                    <div align="center">
+                        {{#if image}}
+                            <a href="{{url}}"><img class="blog-main-photo" src="{{image}}"/></a>
+                        {{/if}}
+                        <time class="blog-subtitle" datetime="{{date format="YYYY-MM-DD"}}">{{date published_at
+                                                                                                   format='Do MMMM YYYY'}}</time>
+                        / {{#author}}<span class="blog-subtitle"><a href="{{url}}">{{name}}</a></span>{{/author}}
+                        <h2 class="blog-title"><a href="{{url}}" title="{{title}}">{{title}}</a></h2>
+                    </div>
+                    <p class="post-description">{{excerpt characters='140'}} <a href="{{url}}">[...]</a></p>
+                </article>
+                <hr>
+            {{/foreach}}
         </div>
-      </article>
-    {{/foreach}}
-
-    {{pagination}}
-  </div>
-  <div class="space-8"></div>
+        {{pagination}}
+    </div>
 </div>
+

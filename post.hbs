@@ -1,22 +1,24 @@
 {{!< default}}
-<div class="row">
-  {{#post}}
+{{#post}}
+    <div class="row" id="main">
+        <div align="center" class="space-1">
 
-    <article id="{{id}}" class="{{post_class}}">
-      <div align="center" class="post-text-section">
-        <p class="post-meta-text">
-          <time class="post-stamp" datetime="{{date format="YYYY-MM-DD"}}">{{date published_at
-                                                                                  format='Do MMMM YYYY'}}</time>
-          /
-          {{#author}}<span class="post-author"><a href="{{url}}">{{name}}</a></span>{{/author}}
-        </p>
-        <h2 class="post-title"><a href="{{url}}" title="{{title}}">{{title}}</a></h2>
-        {{#if image}}
-          <img class="main-images" src="{{image}}"/>
-        {{/if}}
-        <h4 class="post-content">{{content}}</h4>
-      </div>
-    </article>
-
-  {{/post}}
-</div>
+            <div class="blog-body">
+                <article id="{{id}}" class="{{post_class}}">
+                    <div align="center">
+                        {{#if image}}
+                            <a href="{{url}}"><img class="blog-main-photo" src="{{image}}"/></a>
+                        {{/if}}
+                        <p class="code-text" id="meta-text">
+                        <time datetime="{{date format="YYYY-MM-DD"}}">{{date published_at format='Do MMMM YYYY'}}</time>
+                        by {{#author}}<a href="{{url}}">{{name}}</a>{{/author}}
+                        {{tags prefix=" on "}}
+                        </p>
+                        <h2 class="blog-title"><a href="{{url}}" title="{{title}}">{{title}}</a></h2>
+                    </div>
+                    <p>{{content}}</p>
+                </article>
+            </div>
+        </div>
+    </div>
+{{/post}}

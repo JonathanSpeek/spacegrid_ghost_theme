@@ -1,1 +1,18 @@
 {{!< default}}
+{{#author}}
+    <div class="row" id="main">
+        <div align="center" class="space-1">
+            {{#if image}}<img src="{{image}}" alt="{{name}}'s Picture"/>{{/if}}
+            <h1 class="blog-main-title">{{name}}</h1>
+            <h3 class="blog-description">{ {{location}} }</h3>
+            <p>
+                <a class="author-social" href="{{twitter_url}}"><i class="icon-color fa fa-twitter"></i> {{twitter}}</a>
+                ||
+                <a class="author-social" href="{{facebook_url}}"><i class="icon-color fa fa-facebook"></i> {{facebook}}</a>
+            </p>
+            <div class="blog-body">
+                {{#if bio}}<p class="author-bio">{{bio}}</p>{{/if}}
+            </div>
+        </div>
+    </div>
+{{/author}}

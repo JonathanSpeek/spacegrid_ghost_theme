@@ -1,7 +1,8 @@
 {{!< default}}
-
 <nav class="pagination">
-  {{#if prev}}<a class="newer-posts" href="{{page_url prev}}">Last</a>{{/if}}
-  <span class="page-number">Page {{page}} of {{pages}}</span>
-  {{#if next}}<a class="older-posts" href="{{page_url next}}">Next</a>{{/if}}
+    <p class=".code-text">
+        {{#if prev}}<a href="{{page_url prev}}"><i class="fa fa-arrow-left" aria-hidden="true"></i>&nbsp;</a>{{/if}}
+        Page {{page}}
+        {{#if next}}<a href="{{page_url next}}">&nbsp;<i class="fa fa-arrow-right" aria-hidden="true"></i></a>{{/if}}
+    </p>
 </nav>
