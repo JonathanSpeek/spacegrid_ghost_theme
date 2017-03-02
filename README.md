@@ -1,3 +1,8 @@
+### A simple, minimalist, responsive [Ghost](https://ghost.org) theme.
+#### See the demo [here](http://spacegrid.ghost.io). If you like, feel free to buy me a [coffee](https://ko-fi.com/A378OHL)!
+
+<img style="width:400px;height:auto;" src="http://jspeek.me/spacegrid/img/spacegrid-ghost-theme-1.png"/>
+
 ### License
 
 > The MIT License (MIT)
