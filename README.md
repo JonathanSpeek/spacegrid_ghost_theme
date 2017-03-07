@@ -3,7 +3,7 @@
     <h2>A simple, minimalist, responsive <a href="https://ghost.org">Ghost</a> theme.</h2>
     <h4>See the demo <a href="http://spacegrid.ghost.io">here</a>. If you like, feel free to buy me a <a href="https://ko-fi.com/A378OHL">coffee</a>!</h4>
 </div>
-<img style="width:400px;height:auto;" src="http://jspeek.me/spacegrid/img/spacegrid-ghost-theme-1.png"/>
+<img style="margin-top:40px;width:400px;height:auto;" src="http://jspeek.me/spacegrid/img/spacegrid-ghost-theme-1.png"/>
 
 ### License
 
