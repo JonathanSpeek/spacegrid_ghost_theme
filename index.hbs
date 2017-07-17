@@ -1,5 +1,4 @@
 {{!< default}}
-
 <div class="row" id="main">
     <div align="center" class="space-1">
         <img src="{{@blog.logo}}"/>
@@ -7,22 +6,23 @@
         <h3 class="blog-description">{ {{@blog.description}} }</h3>
         <div class="blog-body">
             {{#foreach posts}}
-                <article id="{{id}}" class="{{post_class}}">
+            <article id="{{id}}" class="{{post_class}}">
+                <div align="center">
+                    {{#if image}}
+                    <a href="{{url}}"><img class="blog-main-photo" src="{{image}}"/></a>
+                    {{/if}}
                     <div align="center">
-                        {{#if image}}
-                            <a href="{{url}}"><img class="blog-main-photo" src="{{image}}"/></a>
-                        {{/if}}
                         <time class="blog-subtitle" datetime="{{date format="YYYY-MM-DD"}}">{{date published_at
-                                                                                                   format='Do MMMM YYYY'}}</time>
+                        format='Do MMMM YYYY'}}</time>
                         / {{#author}}<span class="blog-subtitle"><a href="{{url}}">{{name}}</a></span>{{/author}}
                         <h2 class="blog-title"><a href="{{url}}" title="{{title}}">{{title}}</a></h2>
                     </div>
-                    <p class="post-description">{{excerpt characters='140'}} <a href="{{url}}">[...]</a></p>
-                </article>
-                <hr>
+                </div>
+                <p class="post-description">{{excerpt characters='140'}} <a href="{{url}}">[...]</a></p>
+            </article>
+            <hr>
             {{/foreach}}
         </div>
         {{pagination}}
     </div>
 </div>
-
