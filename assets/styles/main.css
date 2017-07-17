@@ -190,7 +190,7 @@ li a.social:hover {
 }
 
 .blog-main-photo {
-    max-width: 100%;
+    width: 100%;
     height: auto;
     margin-bottom: 1em;
 }
