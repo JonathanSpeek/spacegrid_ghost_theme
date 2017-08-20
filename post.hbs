@@ -6,8 +6,8 @@
             <div class="blog-body">
                 <article id="{{id}}" class="{{post_class}}">
                     <div align="center">
-                        {{#if image}}
-                            <a href="{{url}}"><img class="blog-main-photo" src="{{image}}"/></a>
+                        {{#if feature_image}}
+                            <a href="{{url}}"><img class="blog-main-photo" src="{{img_url feature_image}}"/></a>
                         {{/if}}
                         <p class="code-text" id="meta-text">
                         <time datetime="{{date format="YYYY-MM-DD"}}">{{date published_at format='Do MMMM YYYY'}}</time>

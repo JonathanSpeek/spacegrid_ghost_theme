@@ -1,4 +1,7 @@
 {
-  "name": "Spacegrid",
-  "version": "0.0.1"
+  "name": "spacegrid",
+  "version": "0.0.1",
+  "author": {
+    "email": "hello@jonathanspeek.com"
+  }
 }
