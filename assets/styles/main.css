@@ -37,6 +37,22 @@ h4 {
     color: #2c3643;
 }
 
+h5 {
+    font-family: Open Sans, sans-serif;
+    font-size: 1.314em;
+    font-weight: 400;
+    letter-spacing: 0;
+    color: #2c3643;
+}
+
+h6 {
+    font-family: Open Sans, sans-serif;
+    font-size: 1.214em;
+    font-weight: 400;
+    letter-spacing: 0;
+    color: #2c3643;
+}
+
 p {
     font-family: Open Sans, sans-serif;
     line-height: 1.5;
