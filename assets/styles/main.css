@@ -61,7 +61,7 @@ p {
     color: #2c3643;
 }
 
-ul, li {
+ul, ol {
     font-family: Open Sans, sans-serif;
     line-height: 1.5;
     font-weight: 400;
