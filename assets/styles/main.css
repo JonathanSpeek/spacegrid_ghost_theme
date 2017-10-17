@@ -61,6 +61,15 @@ p {
     color: #2c3643;
 }
 
+ul, li {
+    font-family: Open Sans, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    letter-spacing: 0;
+    color: #2c3643;
+    text-align: left;
+}
+
 blockquote {
     border-left: 15px solid #2c3643;
     padding: 0 0 0 5px;
