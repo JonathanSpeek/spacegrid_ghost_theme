@@ -1,7 +1,19 @@
 {
   "name": "spacegrid",
-  "version": "0.0.1",
-  "author": {
-    "email": "hello@jonathanspeek.com"
-  }
+  "description": "Light weight and Responsive Ghost theme.",
+  "demo": "https://jonathanspeek.com",
+  "version": "0.0.2",
+  "engines": {
+    "ghost": ">=1.2.0"
+},
+"author": {
+      "name": "jonathanspeek",
+      "email": "hello@jonathanspeek.com",
+      "url": "https://jonathanspeek.com"
+  },
+"config": {
+  "posts_per_page": 5
+ }
 }
+
+
